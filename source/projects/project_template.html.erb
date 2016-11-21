@@ -1,0 +1,10 @@
+<div class="project-detail">
+  <h1><%= project_title %></h1>
+  <img src="/images/<%= project_image %>" alt="" />
+  <p>
+    <%= project_text %>
+  </p>
+  <% if project_link %>
+    <a class="project_link" href="<%= project_link %>">Link to <%= project_title %> </a>
+  <% end %>
+</div>

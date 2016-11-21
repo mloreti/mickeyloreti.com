@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <%= partial "partials/head" %>
+
+  <body>
+    <div class="container">
+      <%= partial "partials/nav" %>
+      <div class="<%= page_classes %>">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+
+</html>
