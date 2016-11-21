@@ -50,6 +50,7 @@ data.projects.projects.each do |project|
       :project_text => project.text,
       :project_image => project.image,
       :project_link => project.link,
+      :github_link => project.github
     },
     :ignore => true
 end

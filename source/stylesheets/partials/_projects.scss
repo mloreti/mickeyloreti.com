@@ -37,4 +37,16 @@
   img {
     width: 100%;
   }
+  p {
+    line-height: 1.5em;
+  }
+  .project-link p {
+    display: inline;
+    background: tomato;
+    color: white;
+    padding: 5px 10px;
+    &:hover {
+      background: #111;
+    }
+  }
 }

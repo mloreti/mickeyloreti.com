@@ -5,6 +5,9 @@
     <%= project_text %>
   </p>
   <% if project_link %>
-    <a class="project_link" href="<%= project_link %>">Link to <%= project_title %> </a>
+    <a class="project-link" href="<%= project_link %>"><p>Link to <%= project_title %></p></a>
+  <% end %>
+  <% if github_link %>
+    <a class="project-link" href="<%= github_link %>"><p>Github</p></a>
   <% end %>
 </div>
