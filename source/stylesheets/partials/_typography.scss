@@ -1,16 +1,22 @@
-/* --- Typography --- */
-
-html {
-  color: rgb(74, 74, 74);
+h1, h2, h3, h4, h5, h6, a, p {
+  margin: 0;
+  padding: 0;
+  color: rgb(51,51,51);
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: #4a4a4a;
-  &:hover {
-    color: #999;
-  }
 }
-h1, h2, h3, li, a {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+
+h1 {
+  font-weight: 300;
+  font-size: 48px;
+  margin-bottom: 36px;
+  color: tomato;
+}
+p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #555;
 }

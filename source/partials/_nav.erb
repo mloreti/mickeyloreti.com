@@ -1,16 +1,9 @@
 <div class="nav">
-
-  <a href="/"><h1 class="logo">Mickey Loreti</h1></a>
-
-  <a href="#"><i class="fa fa-bars nav-menu" aria-hidden="true"></i></a>
   <div class="nav-content">
-    <a href="/projects"><h3>Projects</h3></a>
-    <ul>
-      <% data.projects.projects.each do |f| %>
-      <li><a href="/projects/<%= f.path %>"><%= f.title %></a></li>
-      <% end %>
-    </ul>
-    <a href="/about"><h3>About</h3></a>
+    <a href="/"><h1 class="logo">Mickey Loreti</h1></a>
+    <div class="links">
+      <a href="/projects"><h3>Projects</h3></a>
+      <a href="/about"><h3>About</h3></a>
+    </div>
   </div>
-
 </div>

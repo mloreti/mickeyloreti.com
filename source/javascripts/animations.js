@@ -1,9 +1,5 @@
 $(() => {
-  $('.projects a').on('click', function(e){
-    $('.projects').addClass('fadeOut');
-  })
-
-  $('.nav-menu').on('click', function(e) {
-    $('.projects').toggleClass('fadeOut');
-  })
+  $('.about').addClass('animated slideInDown')
+  $('.project-detail').addClass('animated slideInUp')
+  $('.project-grid').addClass('animated slideInLeft')
 })

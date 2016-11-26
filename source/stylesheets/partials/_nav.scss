@@ -1,41 +1,39 @@
-/* --- Navigation --- */
-
 .nav {
-  width: 20%;
-  h1.logo{
-    font-size: 18px;
-    margin-top: 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e4e4e4;
-    display: inline-block;
-  }
-  h3 {
-    margin-bottom: 0px;
-    margin-top: 20px;
-  }
-  ul {
-    padding: 0;
-    margin-top: 10px;
-    li {
-      list-style: none;
-      padding-bottom: 10px;
-    }
-  }
-  @media (max-width: 700px) {
-    width: 100%;
-  }
-  .nav-menu {
-    display: none;
-    font-size: 24px;
-    @media (max-width: 700px) {
-      display: block;
-      visibility: visible;
-      float: right;
-    }
-  }
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   .nav-content {
-    @media (max-width: 700px) {
-      display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+    margin-bottom: 50px;
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    h1, h2, h3 {
+      display: inline;
+      @media screen and (max-width: 500px) {
+        margin-right: 0px;
+      }
+    }
+    .logo {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: black;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 400;
+      margin-left: 50px;
+      letter-spacing: .5px;
+      &:hover {
+        border-bottom: 2px solid tomato;
+      }
     }
   }
 }

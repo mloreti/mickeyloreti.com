@@ -48,7 +48,7 @@ data.projects.projects.each do |project|
     :locals => {
       :project_title => project.title,
       :project_text => project.text,
-      :project_image => project.image,
+      :project_images => project.images,
       :project_link => project.link,
       :github_link => project.github
     },

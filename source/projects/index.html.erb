@@ -2,15 +2,16 @@
 title: Projects | Mickey Loreti
 ---
 
-<h1>Projects</h1>
 <div class="project-grid">
   <% data.projects.projects.each do |project| %>
     <div class="project">
       <a href="/projects/<%= project.path %>">
         <div class="thumb" style="background-image: url(/images/<%= project.thumb %>)"></div>
-        <h3> <%= project.title %> </h3>
+        <div class="overlay">
+          <h3><%= project.title %> </h3>
+          <p><%= project.descrpition %></p>
+        </div>
       </a>
-      <p> <%= project.descrpition %> </p>
     </div>
   <% end %>
 </div>
