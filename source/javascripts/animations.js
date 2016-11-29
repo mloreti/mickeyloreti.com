@@ -1,5 +1,6 @@
 $(() => {
-  $('.about').addClass('animated slideInDown')
-  $('.project-detail').addClass('animated slideInUp')
-  $('.project-grid').addClass('animated slideInLeft')
+  $('body').addClass('animated fadeIn');
+  $('a').on('click', function(){
+    $('body').addClass('animated fadeOut');
+  })
 })

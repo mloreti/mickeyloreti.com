@@ -2,20 +2,38 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media screen and (max-width: 700px) {
+    flex-wrap: wrap;
+  }
   .project-info {
     width: 33%;
+    padding-right: 30px;
+    border-right: 1px solid #eaeaea;
+    @media screen and (max-width: 700px) {
+      border: none;
+      width: 100%;
+    }
+    p {
+      color: rgb(98, 98, 98);
+    }
     .project-link {
       display: inline-block;
-      margin: 10px 5px 0 0;
-      background: #eee;
-      padding: 5px;
+      margin: 25px 10px 0 0;
+      color: white;
+      background: rgba(86, 144, 193, 0.9);
+      padding: 10px 5px;
     }
   }
   .project-images {
     width: 60%;
     margin-bottom: 20px;
+    @media screen and (max-width: 700px) {
+      margin-top: 50px;
+      width: 100%;
+    }
     img {
       width: 100%;
+      box-shadow: 1px 5px 10px 2px #eee;
     }
   }
 }

@@ -32,7 +32,42 @@
       margin-left: 50px;
       letter-spacing: .5px;
       &:hover {
-        border-bottom: 2px solid tomato;
+        border-bottom: 2px solid rgba(86, 144, 193, 0.9);
+      }
+    }
+  }
+  .links {
+    display: flex;
+    ul {
+      display: inline;
+      position: relative;
+      li {
+        display: inline;
+        list-style: none;
+        &:hover > ul {
+          display: block;
+        }
+      }
+    }
+    li > ul {
+      display: none;
+      position: absolute;
+      top: 26px;
+      left: 50px;
+      text-align: right;
+      background: white;
+      padding: 10px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      z-index: 99;
+      li {
+        text-align: right;
+        display: block;
+        padding: 10px 5px;
+        &:hover {
+          background: whitesmoke;
+          color: rgba(86, 144, 193, 0.9);
+        }
       }
     }
   }
