@@ -19,9 +19,13 @@
     .project-link {
       display: inline-block;
       margin: 25px 10px 0 0;
-      color: white;
-      background: rgba(86, 144, 193, 0.9);
-      padding: 10px 5px;
+      color: black;
+      background: rgb(225, 225, 225);
+      padding: 10px 10px;
+      &:hover {
+        background: rgb(86, 144, 193);
+        color: white;
+      }
     }
   }
   .project-images {
